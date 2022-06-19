@@ -76,11 +76,41 @@ header{
     position: absolute;
     width: 100%;
     top: 100%;
+    visibility:hidden;
+}
+.mobile__menu-visibility{
+    visibility: visible;
 }
 .mobile__menu-items{
+    opacity: 0;
     color: var(--letras1);
     text-align: center;
     padding: 1rem;
     border: 0.1rem solid #013957;
+}
+.mobile__menu-items-animation{
+    animation: menu-items 1s 1 linear forwards;
+}
+.mobile__menu-items-animation:nth-child(1){
+    animation-delay: 0.2s;
+}
+.mobile__menu-items-animation:nth-child(2){
+    animation-delay: 1s;
+}
+.mobile__menu-items-animation:nth-child(3){
+    animation-delay: 2s;
+}
+.mobile__menu-items-animation:nth-child(4){
+    animation-delay: 3s;
+}
+@keyframes menu-items {
+    from{
+        transform: translateY(-10rem);
+        opacity: 0;
+    }   
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    } 
 }
 /* FIN NAV-MOBILE */
