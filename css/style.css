@@ -162,10 +162,65 @@ header{
 }
 /* FIN NAV-MOBILE */
 
-/* INICIO SECTION */
+/* INICIO SECTION-INICIO-MOBILE */
 .section__inicio{
     height: 100vh;
     background-image: url(/img/fondo-mobile.jpg);
     background-position: center;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
 }
+.section__titulos{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+.inicio__titulo{
+    color: var(--letras1);
+    font-weight: bold;
+    font-size: 3rem;
+}
+.inicio__txt{
+    color: #b9b9b8;
+    background: rgba(0, 0, 0, 0.185);
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 1rem;
+    text-shadow: 0 0 1rem black;
+}
+.section__inicio-btn{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 1rem;
+    padding-top: 1.5rem;
+}
+.inicio__btn-promociones{
+    border: 0.1rem solid var(--botones1);
+    border-radius: 5rem;
+    padding: 0.5rem 0;
+    width: 12rem;
+    text-align: center;
+    background: #f78000be;
+    color: var(--letras1);
+    font-weight: bold;
+    text-shadow: 0 0 1rem black;
+}
+.inicio__btn-categorias{
+    border: 0.1rem solid var(--botones1);
+    border-radius: 5rem;
+    padding: 0.5rem 2rem;
+    width: 12rem;
+    text-align: center;
+    background: #f78000be;
+    color: var(--letras1);
+    font-weight: bold;
+    text-shadow: 0 0 1rem black;
+}
+/* FIN SECTION-INICIO-MOBILE */
