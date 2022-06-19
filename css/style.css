@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --fondo:#003049;
+    --letras1:#f4f1de;
+    --botones1:#f77f00;
+    --botones2:#fcbf49;
+    --letras2:#d62828;
+}
+
+body{
+    background: var(--fondo);
+}
+header{
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+/* INICIO NAV-MOBILE */
+.mobile__menu-icon{
+    border: 0.1rem solid var(--botones1);
+    width: 2rem;
+    height: 2.5rem;
+    border-radius: 0.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+}
+.mobile__menu-line{
+    width: 60%;
+    display: block;
+    height: 0.1rem;
+    background: var(--botones1);
+    border-radius: 100%;
+}
+.mobile__contenedor-icon{
+    width: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.mobile__icon-img{
+    width:2.5rem;
+    height: 2.5rem;
+    position: relative;
+}
+.mobile__icon-text{
+    position: absolute;
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: var(--letras1);
+    text-shadow: 0 0 1rem black;
+    padding-left: 0.5rem;
+}
+
+.nav__mobile{
+    width: 100%;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.1rem solid #013957;
+}
+.mobile__menu{
+    align-self: center;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+}
+.mobile__menu-items{
+    color: var(--letras1);
+    text-align: center;
+    padding: 1rem;
+    border: 0.1rem solid #013957;
+}
+/* FIN NAV-MOBILE */
