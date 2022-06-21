@@ -267,8 +267,8 @@ header{
     position: absolute;
     bottom: 35%;
     left: 3%;
-    width: 6rem;
-    height: 4rem; 
+    width: 30%;
+    height: auto; 
  }
 .tarjeta__titulo{
     font-weight: bold;
@@ -286,4 +286,96 @@ header{
     border: 0.1rem solid var(--botones1);
     color: var(--botones1);
     padding: 0.5rem;
+}
+.categoria__tarjeta:nth-child(3) .tarjeta__lado1{
+    background: var(--letras2);
+}
+.categoria__tarjeta:nth-child(3) .tarjeta__titulo{
+    color: var(--letras2);
+}
+.categoria__tarjeta:nth-child(3) .tarjeta__subtitulo{
+    background: var(--letras2);
+}
+.categoria__tarjeta:nth-child(3) .tarjeta__btn{
+    border: 0.1rem solid var(--letras2);
+    color: var(--letras2);
+}
+.categoria__tarjeta:nth-child(4) .tarjeta__lado1{
+    background:#97068b;
+}
+.categoria__tarjeta:nth-child(4) .tarjeta__titulo{
+    color: #97068b;
+}
+.categoria__tarjeta:nth-child(4) .tarjeta__subtitulo{
+    background: #97068b;
+}
+.categoria__tarjeta:nth-child(4) .tarjeta__btn{
+    border: 0.1rem solid #97068b;
+    color: #97068b;
+}
+/* FIN SECTION-CATEGORIA-MOBILE */
+
+/* INICIO SECTION-NOSOTROS-MOBILE */
+
+.section__nosotros{
+    height: 100vh;
+    background-image: url(/img/nosotros-mobile.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    gap: 3rem;
+}
+.nosotros__h1{
+    color: var(--botones2);
+    font-weight: bold;
+    font-size: 2rem;
+    text-shadow: 0 0 0.1rem black;
+}
+.nosotros__p1,.nosotros__p2,.nosotros__p3{
+    color: var(--letras1);
+    font-size: 1.1rem;
+    background: rgba(0, 0, 0, 0.233);
+    padding: 0 1rem;
+    text-align: justify;
+}
+/* FIN SECTION-NOSOTROS-MOBILE */
+
+/* INICIO FOOTER-MOBILE */
+
+.footer__contenedor{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    gap: 0.5rem;
+}
+.footer__frase{
+    color: var(--letras1);
+    font-weight: bold;
+    text-align: center;
+}
+.contacto__tel,.contacto__correo,.contacto__dir{
+    margin-top: 0.5rem;
+    color: var(--letras1);
+    font-size: 1rem;
+    border-bottom: 0.1rem solid var(--botones2);
+}
+.footer__redes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1rem
+}
+.redes__h1{
+    color: var(--botones2);
+}
+.redes__icones{
+    display: flex;
+    gap:3rem;
+    font-size: 2rem;
+    color: var(--letras1);
 }
