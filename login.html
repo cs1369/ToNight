@@ -10,10 +10,10 @@
 </head>
 <body class="body__login">
     <img class="login__img" src="/img/fondo-mobile.jpg" alt="">
-    <div class="login__caja">
+    <div class="login__caja mover_izquierda">
         <div class="login__caja-sesion">
             <a href="" class="login__caja-inicio-registro seleccion">Iniciar Sesion</a>
-            <a href="" class="login__caja-inicio-registro">Registrarse</a>
+            <a href="/formulario.html" class="login__caja-inicio-registro">Registrarse</a>
         </div>
         <div class="login__caja-usuario">
             <label for="usuario" class="caja-usuario__label">Usuario:</label>
@@ -30,6 +30,25 @@
             <img src="/img/luna.png" alt="" class="mobile__icon-img">
             <p class="mobile__icon-text"><span>ToN</span>ight</p>
         </div>
+    </div>
+    <div class="login__caja mover_derecha">
+        <div class="login__caja-sesion">
+            <a href="" class="login__caja-inicio-registro">Iniciar Sesion</a>
+            <a href="" class="login__caja-inicio-registro seleccion">Registrarse</a>
+        </div>
+        <form action="" class="form__registro">
+            <label for="usuario" class="caja-usuario__label">Usuario:</label>
+            <input type="text" id="usuario" class="caja-usuario__input">
+            <label for="email" class="caja-usuario__label">Email:</label>
+            <input type="email" id="email" class="caja-usuario__input">
+            <label for="pass" class="caja-usuario__label">Contraseña:</label>
+            <input type="password" id="usuario" class="caja-usuario__input">
+            <label for="repass" class="caja-usuario__label">Repetir Contraseña:</label>
+            <input type="password" id="repass" class="caja-usuario__input">
+        </form>
+        <div class="login__caja-btn">
+            <a href="" class="caja-btn">Confirmar</a>
+        </div>      
     </div>
 </body>
 </html>

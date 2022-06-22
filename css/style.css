@@ -474,3 +474,32 @@ header{
     margin-top: 10% ;
     align-self: center;
 }
+.form__registro{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 0.3rem;
+}
+.mover_derecha{
+    animation: derecha 1s 1 linear forwards;
+}
+@keyframes derecha {
+    from{
+        left: 100%;
+    }
+    to{
+        left:10%
+    }
+    
+}
+.mover_izquierda{
+    animation: izquierda 1s 1 linear forwards;
+}
+@keyframes izquierda {
+    from{
+        right: 10%;
+    }
+    to{
+        right: 100%;
+    }
+}
