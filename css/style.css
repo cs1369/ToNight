@@ -328,6 +328,9 @@ header{
     background-image: url(/img/nosotros-mobile.jpg);
     background-size: cover;
     background-position: center;
+    
+}
+.sobreNosotros__container{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -357,6 +360,12 @@ header{
     flex-direction: column;
     align-items: center;
     padding-top: 2rem;
+    gap: 0.5rem;
+}
+.footer__logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 0.5rem;
 }
 .footer__frase{
@@ -428,6 +437,7 @@ header{
     display: inline-block;
     text-align: center;
     padding: 1rem 0;
+    cursor: pointer;
 }
 .seleccion{
     border-bottom: 0.2rem solid var(--botones1);
@@ -539,7 +549,7 @@ header{
         right: 10%;
     }
 }
-.escritorio__menu{
+.escritorio__menu, .sobreNosotros__img-escritorio, .login__img-escritorio{
     display: none;
 }
 /* FIN LOGIN-MOBILE */
@@ -547,7 +557,7 @@ header{
 /* INICIO ESCRITORIO */
 
 @media screen and (min-width:1024px) {
-    .mobile__menu-icon,.mobile__menu{
+    .mobile__menu-icon,.mobile__menu, .login__img{
         display: none;
     }
     .nav__mobile{
@@ -649,5 +659,122 @@ header{
         bottom: 20%;
         left: 13%;
         width: 25%;       
+    }
+    /* INICIO SECTION SOBRE-NOSOTROS-ESCRITORIO*/
+    .section__nosotros{
+        padding: 0 3rem;
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        background-image: none;
+    }
+    .sobreNosotros__container{
+        width: 50%;
+    }
+    .sobreNosotros__img-escritorio{
+        display: block;
+        padding: 3rem 0;
+        width: 40%;
+    }
+    .nosotros__h1{
+        position: absolute;
+        font-size: 4rem;
+        transform: skewX(30deg);
+    }
+    .nosotros__titulo{
+        margin-top: 1rem;
+        padding: 1rem 4rem;
+        background: #f7800050;
+        transform: skewX(-30deg);
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 35rem;
+        height: 6rem;
+    }
+    /* FIN SECTION SOBRE-NOSOTROS-ESCRITORIO*/
+
+    /* INICIO FOOTER-ESCRITORIO*/
+    .footer__contenedor{
+        border: 1px solid #012a41;
+        background: #012a41;
+        height: auto;
+        padding-bottom: 3rem;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10rem;
+    }
+    .footer__contacto{
+        order: 1;
+    }
+    .footer__logo{
+        order:2;
+    }
+    .footer__redes{
+        order: 3;
+    }
+    /* FIN FOOTER-ESCRITORIO*/
+
+    .login__img-escritorio{
+        display: block;
+        height: 100vh;
+        background-position: center;
+        background-size:cover;
+        background-repeat: no-repeat;
+        filter: blur(0.3rem);  
+    }
+    .login__caja{
+        width: 30%;
+    }
+    .login__caja-form{
+        width: 30%;
+    }
+    .mover_derecha1{
+        animation: derecha1 0.2s 1 linear forwards;
+    }
+    @keyframes derecha1 {
+        from{
+            left: 100%;
+        }
+        to{
+            left:35%;
+        }
+        
+    }
+    .mover_izquierda1{
+        animation: izquierda1 0.2s 1 linear forwards;
+    }
+    @keyframes izquierda1 {
+        from{
+            right: 35%;
+        }
+        to{
+            right: 100%;
+        }
+    }
+    .mover_derecha2{
+        animation: derecha2 0.2s 1 linear forwards;
+    }
+    @keyframes derecha2 {
+        from{
+            left: 35%;
+        }
+        to{
+            left:100%
+        }
+        
+    }
+    .mover_izquierda2{
+        animation: izquierda2 0.2s 1 linear forwards;
+    }
+    @keyframes izquierda2 {
+        from{
+            right: 100%;
+        }
+        to{
+            right: 35%;
+        }
     }
 }
