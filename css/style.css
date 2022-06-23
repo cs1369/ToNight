@@ -539,4 +539,71 @@ header{
         right: 10%;
     }
 }
+.escritorio__menu{
+    display: none;
+}
 /* FIN LOGIN-MOBILE */
+
+/* INICIO ESCRITORIO */
+
+@media screen and (min-width:1024px) {
+    .mobile__menu-icon,.mobile__menu{
+        display: none;
+    }
+    .nav__mobile{
+        padding-left:3rem;
+        padding-right: 3rem;
+    }
+    .escritorio__menu{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+    .escritorio__menu-items{
+        color: var(--letras1);
+        font-weight: bold;
+    }
+    .escritorio__menu-items:hover{
+        color: var(--botones1);
+    }
+    .section__inicio{
+        background-image: url(/img/fondo-escritorio.jpg);
+    }
+    .inicio__titulo{
+        font-size: 6rem;
+        text-shadow: 0 0 0.1rem black;
+    }
+    .inicio__txt{
+        font-size: 1.5rem;
+    }
+    .section__inicio-btn{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+        margin-top: 1rem;
+        gap: 4rem;
+    }
+    .inicio__btn-promociones{
+        background: #0000;
+        border: 2px solid var(--botones1);
+        color: var(--botones1);
+        text-shadow: none;
+        font-size: 1.1rem;
+    }
+    .inicio__btn-promociones:hover{
+        background: #f78000be;
+        color: var(--letras1);
+        
+    }
+    .inicio__btn-categorias{
+        text-shadow: none;
+        border: 2px solid var(--botones1);
+    }
+    .inicio__btn-categorias:hover{
+        background: #0000;
+        border: 2px solid var(--botones1);
+        color: var(--botones1);
+    }
+}
