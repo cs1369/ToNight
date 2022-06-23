@@ -10,10 +10,10 @@
 </head>
 <body class="body__login">
     <img class="login__img" src="/img/fondo-mobile.jpg" alt="">
-    <div class="login__caja mover_izquierda">
+    <div class="login__caja ">
         <div class="login__caja-sesion">
-            <a href="" class="login__caja-inicio-registro seleccion">Iniciar Sesion</a>
-            <a href="/formulario.html" class="login__caja-inicio-registro">Registrarse</a>
+            <a class="login__caja-inicio-registro seleccion">Iniciar Sesion</a>
+            <a id="registro" class="login__caja-inicio-registro">Registrarse</a>
         </div>
         <div class="login__caja-usuario">
             <label for="usuario" class="caja-usuario__label">Usuario:</label>
@@ -31,10 +31,10 @@
             <p class="mobile__icon-text"><span>ToN</span>ight</p>
         </div>
     </div>
-    <div class="login__caja mover_derecha">
+    <div class="login__caja-form">
         <div class="login__caja-sesion">
-            <a href="" class="login__caja-inicio-registro">Iniciar Sesion</a>
-            <a href="" class="login__caja-inicio-registro seleccion">Registrarse</a>
+            <a id="inicio-sesion" class="login__caja-inicio-registro">Iniciar Sesion</a>
+            <a class="login__caja-inicio-registro seleccion">Registrarse</a>
         </div>
         <form action="" class="form__registro">
             <label for="usuario" class="caja-usuario__label">Usuario:</label>
@@ -50,5 +50,6 @@
             <a href="" class="caja-btn">Confirmar</a>
         </div>      
     </div>
+    <script src="/js/login.js"></script>
 </body>
 </html>

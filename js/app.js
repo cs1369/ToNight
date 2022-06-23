@@ -20,3 +20,4 @@ menu.addEventListener("click",()=>{
         lista.classList.toggle("mobile__menu-items-animation");
     }
 });
+
